@@ -109,7 +109,7 @@ console.log(getBestStudent(students));
 // // повторень.
 
 function calculateWordLetters(text) {
-  const arr = text.split("");
+  const arr = text.toLowerCase().split("");
   const lettersObject = {};
   for (let letter of arr) {
     lettersObject[letter] = lettersObject[letter]
@@ -118,4 +118,4 @@ function calculateWordLetters(text) {
   }
   return lettersObject;
 }
-console.log(calculateWordLetters("applejuice"));
+console.log(calculateWordLetters("apPlejuiceINTheglass"));
